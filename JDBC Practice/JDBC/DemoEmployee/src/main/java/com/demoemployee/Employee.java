@@ -11,16 +11,11 @@ public class Employee {
     private Date joiningDate;
     private double salary;
     private int age;
-
-    // Default Constructor
     public Employee() {
     }
-
-    // Parameterized Constructor
     public Employee(int empId, String empName, String phoneNo,
                     String designation, Date joiningDate,
                     double salary, int age) {
-
         this.empId = empId;
         this.empName = empName;
         this.phoneNo = phoneNo;
@@ -29,9 +24,6 @@ public class Employee {
         this.salary = salary;
         this.age = age;
     }
-
-    // Getters and Setters
-
     public int getEmpId() {
         return empId;
     }
