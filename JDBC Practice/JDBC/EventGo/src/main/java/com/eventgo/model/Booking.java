@@ -11,11 +11,9 @@ public class Booking {
     private double totalPrice;
     private Timestamp bookingDate;
 
-    // Default Constructor
     public Booking() {
     }
 
-    // Parameterized Constructor
     public Booking(int bookingId, int userId, int eventId, int numberOfPasses, double totalPrice, Timestamp bookingDate) {
         this.bookingId = bookingId;
         this.userId = userId;
@@ -24,8 +22,6 @@ public class Booking {
         this.totalPrice = totalPrice;
         this.bookingDate = bookingDate;
     }
-
-    // Getters and Setters
     public int getBookingId() {
         return bookingId;
     }
