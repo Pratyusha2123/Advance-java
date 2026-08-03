@@ -57,7 +57,7 @@ public class Main {
                     sc.nextLine();
 
                     // Simple check if user exists (Assuming UserDAO has a method or we can directly open menu)
-                    System.out.println("✅ Login Successful!");
+                    System.out.println("Login Successful!");
 
                     int userChoice;
                     do {
@@ -107,11 +107,11 @@ public class Main {
                     String adminPass = sc.nextLine();
 
                     if (!adminPass.equals("admin123")) {
-                        System.out.println("❌ Invalid Admin Password!");
+                        System.out.println("Invalid Admin Password!");
                         break;
                     }
 
-                    System.out.println("✅ Admin Login Successful!");
+                    System.out.println("Admin Login Successful!");
                     int adminChoice;
 
                     do {
