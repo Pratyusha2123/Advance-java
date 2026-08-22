@@ -29,8 +29,7 @@ public class LoginController extends HttpServlet {
 
         if (validStudent != null) {
             System.out.println("Login successfully for: " + validStudent.getName());
-            HttpSession session = req.getSession();
-            session.setAttribute("currentUser", validStudent);
+            Cookie cookie = new Cookie("currentUser", email);
             resp.sendRedirect("Home.html");
 
         } else {
